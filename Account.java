@@ -10,11 +10,18 @@ public class Account
 		accountNumber = 0;
 		balance = 0.0;
 	}
-	public Account (String o, int n, double b)
+	public Account(String o, int n, double b)
 	{
 		setOwner(o);
 		setAccountNumber(n);
-		setBalance(b);
+		if(b >= 50)
+		{
+			setBalance(b);
+		}
+		else 
+		{
+			setBalance(0);
+		}
 	}
 	
 	public String getOwner()

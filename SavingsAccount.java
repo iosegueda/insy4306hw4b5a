@@ -41,6 +41,39 @@ public class SavingsAccount
 	
 	public void calculateInterest()
 	{
+		double interest; 
+		double principleAmount;
+		double ratePerYear;
+		double time;
+		int months;
+		int monthsPerYear;
+		
+		principleAmount = getBalance();
+		ratePerYear = interestRate;
+		monthsPerYear = 12;
+		months = 1;
+		time = months/monthsPerYear;
+		
+		interest = principleAmount*ratePerYear*time;
+		setBalance(getBalance() + interest);
+	}
+	@Override
+	public void withDraw(double amt)
+	{
+		if(getNumberWithdrawals() < 3) 
+		{
+			if((getBalance() - amt) > 50)
+			{
+				setBalance = getBalance() - amt;
+			}
+			else
+			{
+				System.out.println("Insufficient funds, withdrawal cancelled.")
+			}
+			setNumberWithdrawals(getNumberWithdrawals() + 1);
+		}
+		else 
+			System.out.println("You have reached the maximum amount of withdrawals from your savings account for this month");
 		
 	}
 }

@@ -5,7 +5,7 @@ public class CheckingAccount
 	
 	public CheckingAccount()
 	{
-		ATMFees = 0.0;
+		ATMFees = 2.50;
 		numberChecksWritten = 0;
 	}
 	public CheckingAccount(double f, int c)
@@ -38,6 +38,10 @@ public class CheckingAccount
 	
 	public void checkWrittingFee()
 	{
+		if (getNumberChecksWritten() > 10)
+		{
+			super.setBalance(super.getBalance() - ((getNumberChecksWritten() - 10) * .05));
+		}
 		
 	}
 }
