@@ -43,11 +43,22 @@ public class Account
 	}
 	public void withDraw(double amt)
 	{
-		if(getBalance() > 
+		if((getBalance() - amt) > 50)
+		{
+			setBalance = getBalance() - amt;
+		}
+		else
+		{
+			System.out.println("Insufficient funds, withdrawal cancelled.")
+		}
 	}
 	public void deposit(double amt)
 	{
+		double amt = getBalance();
 		
+		amt += balance;
+		
+		setBalance(balance);
 	}
 	public String toString()
 	{

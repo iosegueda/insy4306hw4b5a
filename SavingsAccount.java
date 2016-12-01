@@ -5,12 +5,16 @@ public class SavingsAccount
 	
 	public SavingsAccount()
 	{
-		interestRate = 0.0;
+		interestRate = 0.02;
 		numberWithdrawals = 0;
 	}
-	public SavingsAccount(String o, int n, double b, double l, int w)
+	public SavingsAccount(String o, int n, double b, double i, int w)
 	{
-		
+		super.setOwner(o);
+		super.setAccountNumber(n);
+		super.setBalance(b);
+		this.setInterestRate(i);
+		this.setNumberWithdrawals(w);
 	}
 	
 	public double getInterestRate()

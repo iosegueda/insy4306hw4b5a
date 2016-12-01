@@ -1,0 +1,73 @@
+questions about the hw that people are asking
+atm fee is $2.50 just set the atm fee to $2.50, you dont have to test 
+it but you have to put it in there. you can't check it but you need it to calculate 
+the monthly stuff. just hardcode it, dont put it in the constructor or anything. dont test 
+to see if the atm fee is set to anything 
+
+check the balance at the end of the month 
+get a balance for the regular account 
+
+interest is just on savings, you can give a balance at the end of the month every month 
+
+you dont have to test getters and setters if they dont have any logic in them 
+but if it has something then you have to test it 
+dont test the tostring 
+
+test for each positive and negative?
+test the good case and a bad case, it doesnt mean it should be false
+accoutn cant go to negative 
+
+assert equals that some number is what you get from getbalance 
+in your test case for that withdraw you can have something like 
+create an instance of account and set it with 50 
+on my test case i will withdraw 50 
+in my assert if you getbalance it should be 50 and it should be positive so true bc we wuoldnt 
+let it withdraw if its going to be less than 50 
+
+all test cases should pass with true if it doesnt then its not right
+you dont have to check if its passing bad data
+
+if its an assignment or return you dont have to check it (getters and setters)
+
+what you can do in the constructor, check the amount 50 or greater and fi it is set it to that and 
+if not set it to 0 (thats what she would do ) then check if its 50 or 0 
+
+if you call the constructor can check right then, was the amoutn greater than or equal to 50?
+if its not set it to 0 
+then call assert equals get balance and if it comes back to 0 then ti means it wasn't created 
+assert equals 0 and should come back 0 
+
+at least 1 test case for each in a class 
+
+everyone can have a little bit of different cases depending on how you created your code
+but no ones test should be false 
+
+you dont let them withdraw if its too much, also no partials, its either that or nothing 
+when withdrawing
+
+if the amount is greater than the account balance then dont let them 
+they can eitehr withdraw the whole amoutn or nothing 
+
+you have to have 50 at all times 
+
+what she would do 
+create her instance and set withdraws to 3 and then you can getwithdraw and see 
+that it wouldnt let you
+
+creat a child instance not a parent instance bc a savings account is an account 
+you dont have to always create accoutn objects you can create child objects 
+
+if you create a savings accoutn youc an test all of that 
+
+child inherits withdraw, it doesnt count the number of withdraws. can we ovverride it?
+override the method she will allow it 
+she says it might work without doing that but we can override it if we want 
+you can ovveride for withdraw 
+
+she says we can return stuff if we want to? doesnt have to be void 
+
+shes just lookign for significant coverage that you covered mostly everything 
+all tests have to come back true
+she'll look at our code first then our test cases 
+
+***************What does the # mean? THIS WILL BE ON TEST************
