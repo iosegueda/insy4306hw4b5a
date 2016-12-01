@@ -1,4 +1,5 @@
-public class SavingsAccount
+//Iris Osegueda
+public class SavingsAccount extends Account
 {
 	private double interestRate;
 	private int numberWithdrawals;
@@ -21,7 +22,7 @@ public class SavingsAccount
 	{
 		return interestRate;
 	}
-	public getNumberWithdrawals;
+	public int getNumberWithdrawals()
 	{
 		return numberWithdrawals;
 	}
@@ -35,8 +36,9 @@ public class SavingsAccount
 	}
 	public String toString()
 	{
-		System.out.println("Interest Rate: " + interestRate + "\n" +
+		String string = ("Interest Rate: " + interestRate + "\n" +
 							"Number of Withdrawals: " + numberWithdrawals);
+		return string;
 	}
 	
 	public void calculateInterest()
@@ -64,11 +66,11 @@ public class SavingsAccount
 		{
 			if((getBalance() - amt) > 50)
 			{
-				setBalance = getBalance() - amt;
+				setBalance(getBalance() - amt);
 			}
 			else
 			{
-				System.out.println("Insufficient funds, withdrawal cancelled.")
+				System.out.println("Insufficient funds, withdrawal cancelled.");
 			}
 			setNumberWithdrawals(getNumberWithdrawals() + 1);
 		}

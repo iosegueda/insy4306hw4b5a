@@ -1,4 +1,5 @@
-public class CheckingAccount
+//Iris Osegueda
+public class CheckingAccount extends Account
 {
 	private double ATMFees;
 	private int numberChecksWritten;
@@ -30,10 +31,11 @@ public class CheckingAccount
 	{
 		numberChecksWritten = c;
 	}
-	public String toString
+	public String toString()
 	{
-		System.out.println("ATM Fees: " + ATMFees + "\n" +
+		String string = ("ATM Fees: " + ATMFees + "\n" +
 							"Number of Checks Written: " + numberChecksWritten);
+		return string;
 	}
 	
 	public void checkWrittingFee()

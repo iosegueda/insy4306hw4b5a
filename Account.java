@@ -1,3 +1,4 @@
+//Iris Osegueda
 public class Account 
 {
 	private String owner;
@@ -52,26 +53,23 @@ public class Account
 	{
 		if((getBalance() - amt) > 50)
 		{
-			setBalance = getBalance() - amt;
+			setBalance(getBalance() - amt);
 		}
 		else
 		{
-			System.out.println("Insufficient funds, withdrawal cancelled.")
+			System.out.println("Insufficient funds, withdrawal cancelled.");
 		}
 	}
 	public void deposit(double amt)
 	{
-		double amt = getBalance();
-		
-		amt += balance;
-		
-		setBalance(balance);
+		setBalance(getBalance() + amt);
 	}
 	public String toString()
 	{
-		System.out.println("Owner: " + owner + "\n" +
+		String string = ("Owner: " + owner + "\n" +
 							"Account Number: " + accountNumber + "\n" +
 								"Account Balance: " + balance);
+		return string;
 	}
 	
 }
